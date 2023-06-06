@@ -5,4 +5,6 @@ The repository holds code snippets for various functions I've tried to implement
 
 Current total files here by language are:
 
-Python: 4
+Python: 5
+Java: 2
+Ruby 1
