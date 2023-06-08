@@ -3,39 +3,50 @@
 # @param {Integer[]} cost
 # @return {Integer}
 def can_complete_circuit(gas, cost)
-    skip = 0
-    counter = 0
+    
+    if gas.sum < cost.sum
+        return -1
+    end
 
-    (0..gas.length-1).each do |x|
+    start = 0
+    position = 0
+    cgas = 0
+    ccost = 0
 
-        if skip > x
-            x = skip
-        end
+
+
+    while position < gas.length do
 
         
+
+       
         
       
-        cgas = 0
-        ccost = 0
-          
-        while true  
-            if counter > gas.length 
-                return x
-            end
+        cgas  += gas[position]
+        ccost += cost[position]
 
-            position = (x+counter)%gas.length
-
-            cgas += gas[position]
-            ccost += cost[position]
-
-            if ccost > cgas
-                skip = x
-                counter = 0
-                break
+        if position == start and cgas < ccost
+            while position == start and gas[position] < cost[position] do
+                position += 1
+                start = position
             end
             
-            counter += 1
+            cgas = 0
+            ccost = 0
+        
+        elsif position != start and cgas < ccost then
+
+            cgas = 0
+            ccost = 0
+            start = position
+        
+        else
+            position += 1
+        
         end
+          
+        
     end
-    return -1
+
+    return start
 end
