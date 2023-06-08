@@ -1,0 +1,44 @@
+###leetcode 134
+
+class Solution:
+    def canCompleteCircuit(self, gas: List[int], cost: List[int]) -> int:
+
+        if sum(gas) < sum(cost):
+            return - 1
+
+        start = 0
+
+        
+        position = 0
+
+        currentgas = 0
+        currentcost = 0
+      
+
+        while position < len(gas):
+
+            
+            currentgas += gas[position]
+            currentcost += cost[position]
+
+
+
+            if position == start and currentgas < currentcost:
+                while position == start and gas[position] < cost[position]:
+               
+                    position += 1
+                    start = position
+                currentgas = 0
+                currentcost = 0
+            
+            elif position != start and currentgas < currentcost:
+                currentgas = 0
+                currentcost = 0
+                start = position
+            
+            else:
+                position += 1
+           
+
+            
+        return start
