@@ -5,7 +5,7 @@ The repository holds code for various functions I've successfully implemented in
 
 Current total files here by language are:
 
-Python: 5 
+Python: 8
 
 Java: 2   
 
