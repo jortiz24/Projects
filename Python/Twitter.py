@@ -13,13 +13,16 @@ class Twitter:
         if userId not in self.followList:
             self.followList[userId] = []
 
-        self.allTweets[tweetId] = userId 
+        dic = {tweetId:userId}
+        dic.update(self.allTweets) 
+        self.allTweets = dic
 
     def getNewsFeed(self, userId: int) -> List[int]:
         
         feed = []
 
-        tweets = dict(reversed((self.allTweets).items()))
+        print(self.allTweets)
+        tweets = self.allTweets
 
         for x in tweets:
             print(tweets)
