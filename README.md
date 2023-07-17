@@ -9,6 +9,6 @@ Java: 2
 
 Javascript: 1
 
-Python: 14
+Python: 15
 
 Ruby: 1
