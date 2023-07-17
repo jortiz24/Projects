@@ -11,4 +11,4 @@ Javascript: 1
 
 Python: 15
 
-Ruby: 1
+Ruby: 2
