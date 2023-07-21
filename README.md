@@ -7,8 +7,8 @@ Current total files here by language are:
 
 Java: 2
 
-Javascript: 1
+Javascript: 2
 
-Python: 15
+Python: 20
 
-Ruby: 2
+Ruby: 3
