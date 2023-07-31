@@ -62,5 +62,66 @@ WordFilter.prototype.f = function(pref, suff) {
 /** 
  * Your WordFilter object will be instantiated and called as such:
  * var obj = new WordFilter(words)
+
+ /**
+ * @param {string[]} words
+ Solution for leetcode version, changes dictionary to [] instead of {} and adjusts rest of code accordingly, definitely more inefficient. Maybe reverse dictionary once on initialization then search left to right instead of right to left would be faster*/
+var WordFilter = function(words) {
+    
+    dictionary = []
+
+    for(x in words){
+
+        
+        dictionary.push(words[x ])
+            
+            
+      
+    }
+
+
+};
+
+/** 
+ * @param {string} pref 
+ * @param {string} suff
+ * @return {number}
+ */
+WordFilter.prototype.f = function(pref, suff) {
+    
+    
+    
+
+
+    for(x in dictionary){
+
+        
+        word =dictionary[dictionary.length - x - 1]
+        //console.log(word.substring(word.length - suff.length,word.length),pref,suff)
+
+        if(word.length == 1 && word === suff && word === pref){
+            return dictionary.length - x - 1
+        }
+            
+        
+                
+                
+                
+        if(word.substring(0,pref.length) === pref && word.substring(word.length - suff.length,word.length) === suff ){
+                    
+                return dictionary.length - x - 1
+            }
+            
+        }
+
+
+    return - 1
+    };
+
+/** 
+ * Your WordFilter object will be instantiated and called as such:
+ * var obj = new WordFilter(words)
+ * var param_1 = obj.f(pref,suff)
+ */
  * var param_1 = obj.f(pref,suff)
  */
