@@ -41,15 +41,15 @@ WordFilter.prototype.f = function(pref, suff) {
                 return letter.length - x - 1
             }
             
-            if(pref.length + suff.length <= letter[letter.length - x - 1].length ){
+           
                 
                 
                 
-                if(word.substring(0,pref.length) === pref && word.substring(word.length - suff.length,word.length) === suff ){
+            if(word.substring(0,pref.length) === pref && word.substring(word.length - suff.length,word.length) === suff ){
                     
-                    return letter.length - x - 1
-                }
-            }
+                 return letter.length - x - 1
+             }
+            
         }
 
 
