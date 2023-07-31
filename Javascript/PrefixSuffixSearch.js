@@ -75,7 +75,7 @@ var WordFilter = function(words) {
         
         dictionary.push(words[x ])
             
-            
+        /** if list is reversed output would have to be inversed as well, length - index to correspond to 'largest' index for leetcode solution*/
       
     }
 
