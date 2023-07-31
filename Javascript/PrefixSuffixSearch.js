@@ -1,4 +1,4 @@
-/** leetcode #745
+/** leetcode #745 Dictionary that searches by prefix and suffix of words
  * @param {string[]} words
  This solution is different from Leetcode because I broke up the inputs into dictionary by first letter for better efficiency 
  However the solution only accepts returning index from a list that has all the inputs in one rather than organized in different lists*/
