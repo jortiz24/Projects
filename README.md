@@ -10,6 +10,6 @@ Java: 2
 
 Javascript: 5, Movie Rental code and Dictionary Search
 
-Python: 20 , Password Checker, ValidIP and Int to English 
+Python: 20 (Password Checker,Minesweeper, ValidIP and Int to English) 
 
 Ruby: 3
