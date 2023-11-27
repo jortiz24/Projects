@@ -8,7 +8,7 @@ Current total files here by language are:
 
 Java: 2
 
-Javascript: 5, Movie Rental code and Dictionary Search
+Javascript: 5 (Movie Rental code and Dictionary Search)
 
 Python: 20 (Password Checker,Minesweeper, ValidIP and Int to English) 
 
