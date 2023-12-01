@@ -1,7 +1,7 @@
 # Projects
 
 The repository holds code for various functions I've successfully implemented in any languages I am proficient in.
-Some notable mentions are included as well.
+Some notable mentions are included as well. My main school project can be found here https://github.com/jortiz24/audio-project
 
 
 Current total files here by language are:
